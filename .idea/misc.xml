@@ -8,8 +8,11 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.136" />
         <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.136" />
         <entry key="app/src/main/res/drawable/ic_settings_black.xml" value="0.136" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/example_activity.xml" value="0.3302083333333333" />
+        <entry key="app/src/main/res/layout/register_activity.xml" value="0.1838768115942029" />
       </map>
     </option>
   </component>

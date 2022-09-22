@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
-    <string name="user_name">Username</string>
     <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="user_name">Username</string>
     <string name="password">Password</string>
-    <string name="reset">Reset</string>
-    <string name="title">Mi primer app</string>
-    <string name="example_text">ejemplo</string>
+    <string name="register">Register</string>
+    <string name="home_title">Home</string>
+    <string name="welcome">Bienvenido!</string>
 </resources>

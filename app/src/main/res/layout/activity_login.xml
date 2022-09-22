@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:id="@+id/main_linear_layout"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
@@ -23,21 +23,31 @@
             android:padding="30dp"
             android:text="@string/login"
             android:textColor="#000"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
         <EditText
-            android:id="@+id/username_edit_text"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColorHint="#c2c2c2" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:hint="@string/user_name"
             android:textAlignment="center"
             android:textColorHint="#c2c2c2" />
 
         <EditText
-            android:id="@+id/password_edit_text"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="@string/password"
+            android:inputType="textPassword"
             android:textAlignment="center"
             android:textColorHint="#c2c2c2" />
 
@@ -49,23 +59,41 @@
             android:padding="25dp">
 
             <Button
-                android:id="@+id/btn_reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:text="@string/reset" />
-
-            <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/login" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olvidaste la password?"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp">
+
+        </TextView>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="Bienvenido .."
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/main_linear_layout"
+        app:layout_constraintTop_toBottomOf="@+id/main_linear_layout">
+
+    </TextView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/ftButton_settings"
+        android:id="@+id/btn_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
@@ -73,7 +101,7 @@
         android:background="@color/purple_500"
         android:contentDescription="@string/app_name"
         android:padding="4dp"
-        android:src="@drawable/ic_settings"
+        android:src="@drawable/ic_help"
         app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
